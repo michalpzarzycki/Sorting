@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import { randomNumberGenerator } from '../utils/randomNumberGenerator'
 import styles from './SortingAlgorithm.module.css';
+
 function SortingAlgorithm() {
     const [array, setArray] = useState([]);
 
