@@ -7,15 +7,13 @@ function SortingAlgorithm() {
     const [array, setArray] = useState([]);
 
     useEffect(() => {
-        setArray(createAnArray(100, () => randomNumberGenerator(10, 30)))
-
-
+        setArray(createAnArray(100, () => randomNumberGenerator(10, 600)))
     }, [])
 
     return (
-        <div>
+        <div className={styles.barContainer}>
             {/* display an array as a rectangles with height of arr[i] */}
-            {array.map(x => <div>{x}</div>)}
+            {array.map(x => <div className={styles.bar} style={{ height: `${x}px` }}></div>)}
         </div>
     )
 }

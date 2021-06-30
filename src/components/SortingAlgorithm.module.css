@@ -1,0 +1,10 @@
+.barContainer {
+
+}
+
+.bar {
+    width: 3px;
+    background-color: blue;
+    display: inline-block;
+    margin: 0 1px;
+}
