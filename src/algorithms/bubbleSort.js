@@ -13,7 +13,7 @@ export let bubbleSort = (inputArr, cb = () => { }, cb2 = () => { }) => {
                     cb2(inputArr)
 
                 }
-            }, 10 * j)
+            }, 10 * (j + i))
 
 
         }

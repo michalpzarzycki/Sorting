@@ -11,7 +11,7 @@ function SortingAlgorithm() {
     const [random, setRandom] = useState(false)
 
     useEffect(() => {
-        setArray(createAnArray(100, () => randomNumberGenerator(10, 600)))
+        setArray(createAnArray(150, () => randomNumberGenerator(100, 600)))
 
     }, [random])
 
